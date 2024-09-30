@@ -1,0 +1,46 @@
+.nav {
+  margin-top: 0.5rem;
+  margin-bottom: 2rem;
+}
+
+.nav ul {
+  list-style: none;
+  display: flex;
+  padding: 0;
+  margin: 0;
+  background-color: transparent;
+}
+
+.nav li {
+  margin-right: 2rem;
+}
+
+.nav a:link,
+.nav a:visited {
+  display: block;
+  color: var(--color-light--2);
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 1.6rem;
+  font-weight: 700;
+  padding: 1rem 2rem;
+  border-radius: 5px;
+  background-color: var(--color-dark--2);
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.nav a:hover,
+.nav a:focus {
+  background-color: var(--color-dark--1);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.nav a:active {
+  background-color: var(--color-dark--0);
+}
+
+/* CSS Modules feature */
+.nav a:global(.active) {
+  background-color: var(--color-dark--0);
+  color: var(--color-light--2); 
+}

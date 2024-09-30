@@ -1,0 +1,17 @@
+// Main layout component for the application, combining sidebar and map components
+import Sidebar from "../components/Sidebar.jsx";
+import Map from "../components/Map.jsx";
+import styles from "../styles/AppLayout.module.css";
+import User from "../components/User.jsx";
+
+function AppLayout() {
+  return (
+    <div className={styles.app}>
+      <Sidebar />
+      <Map />
+      <User />
+    </div>
+  );
+}
+
+export default AppLayout;
